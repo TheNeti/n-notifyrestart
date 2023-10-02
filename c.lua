@@ -1,14 +1,14 @@
 ESX = exports['es_extended']:getSharedObject()
 
 
-RegisterNetEvent('pogodaon')
-AddEventHandler('pogodaon', function()
+RegisterNetEvent('n-pogodaon')
+AddEventHandler('n-pogodaon', function()
     SetWeatherTypeNowPersist("THUNDER")
 end)
 
 
-RegisterNetEvent('pogodaoff')
-AddEventHandler('pogodaoff', function()
+RegisterNetEvent('n-pogodaoff')
+AddEventHandler('n-pogodaoff', function()
     ClearWeatherTypePersist()
 end)
 
