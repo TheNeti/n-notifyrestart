@@ -48,13 +48,13 @@ function RozpocznijOdliczanie()
 
           czasOdliczania = czasOdliczania - 1
           if czasOdliczania <= 1 then
-            TriggerClientEvent('pogodaon', -1)
+            TriggerClientEvent('n-pogodaon', -1)
           end
           if czasOdliczania <= 0 then
               odliczanie = false
               WyrzucWszystkichGraczy()
               Wait(10000)
-              TriggerClientEvent('pogodaoff', -1)
+              TriggerClientEvent('n-pogodaoff', -1)
           end
       end
   end)
@@ -81,7 +81,7 @@ end
 
     function offrestart()
             odliczanie = false
-            TriggerClientEvent('pogodaoff', -1)
+            TriggerClientEvent('n-pogodaoff', -1)
             TriggerClientEvent('ox_lib:notify', -1,{
                 id = 'n-restart',
                 title = 'Restart Serwera!',
